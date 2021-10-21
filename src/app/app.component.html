@@ -1,27 +1,45 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="/students">Students</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="/courses" id="course">Courses</a>
-                </li> 
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="background"></div>
-<div class="background2"></div>
-<div [@triggerName]="prepareRoute(outlet)"> 
-    <router-outlet #outlet="outlet"></router-outlet>
-</div>
+<article id="container">
+  <header id="main-nav">
+    <h1 class="logo">Burgers & Sliders</h1>
+    <div id="bun"><div class="mmm-burger"></div></div>
+  </header>
+  <section id="content">
+    <div class="left-burger"><div class="triangle"></div><h2></h2></div>
+    <div class="right-slider"><h2></h2></div>
+  </section>
+</article>
+<aside id='sidebar'>
+    <nav id='mobile-nav'>
+      <h1 class="mobile-logo">Burgers & Sliders</h1>
+      <ul>
+        <li class="nav-item"><h3>Home</h3></li>
+        <li class="nav-item"><h3>About Us</h3></li>
+          <ul class="sub-nav">
+            <li class="sub-nav-item"><h4>Inner Page</h4></li>
+            <li class="sub-nav-item"><h4>Inner Page</h4></li>
+            <li class="sub-nav-item"><h4>Inner Page</h4></li>
+          </ul>
+        <li class="nav-item"><h3>Our Work</h3></li>
+        <ul class="sub-nav">
+            <li class="sub-nav-item"><h4>Inner Page</h4></li>
+              <li class="sub-nav-item"><h4>Inner Page</h4></li>
+          </ul>
+        <li class="nav-item"><h3>Products & Services</h3></li>
+        <ul class="sub-nav">
+            <li class="sub-nav-item"><h4>Inner Page</h4></li>
+              <li class="sub-nav-item"><h4>Inner Page</h4></li>
+                <li class="sub-nav-item"><h4>Inner Page</h4></li>
+          <li class="sub-nav-item"><h4>Inner Page</h4></li>
+          </ul>
+        <li class="nav-item"><h3>Investors</h3></li>
+        <li class="nav-item"><h3>Press & Media</h3></li>
+        <li class="nav-item"><h3>Blog</h3></li>
+        <ul class="sub-nav">
+            <li class="sub-nav-item"><h4>Inner Page</h4></li>
+              <li class="sub-nav-item"><h4>Inner Page</h4></li>
+                <li class="sub-nav-item"><h4>Inner Page</h4></li>
+          </ul>
+        <li class="nav-item"><h3>Contact Us</h3></li>
+      </ul>
+  </nav>
+</aside>

@@ -1,13 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>HelloAngular</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+<nav class="navbar navbar-expand-lg bg-success">
+  <a class="navbar-brand whiteTitle" href="" >Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link whiteTitle active" href="" [routerLink] = "[/home]" id="home"> Home <span class="sr-only"></span></a>
+      <a class="nav-item nav-link whiteTitle" href="" [routerLink] = "[/students]" id="studets">Students</a>
+      <a class="nav-item nav-link whiteTitle" href="" [routerLink] = "[/courses]" id="courses">Courses</a>
+      <a class="nav-item nav-link whiteTitle" href="" [routerLink] = "[/edition]" id="edition">Editions</a>
+    </div>
+  </div>
+</nav>
 <body>
-  <app-root></app-root>
+  <div class="col-8 titolo">
+    <h1  class=" text-center">Welcome!</h1>
+    <h2 id="Subtitle" class="text-light text-center">On this website you can manage your personal school</h2>
+  </div>
 </body>
-</html>
+
+
+
+
+
